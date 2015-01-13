@@ -209,7 +209,7 @@ sub to_app {
 
     RT::ConnectToDatabase();
 
-    my $rest_path = $class->rest_path;
+    my $rest_path = $class->base_path;
 
     return builder {
         enable '+RT::Extension::REST2::Middleware::Log';
